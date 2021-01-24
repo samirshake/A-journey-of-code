@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ubuntu: 'Ubuntu', sans-serif;
+  --robotoMono: 'Roboto Mono', monospace;
+  --darkBlack:  #1c2833;
+  --darkBlue:  #1f618d;
+  --yellow:  #f4d03f;
+  --grey:  #424949;
+  --green:  #27ae60;
+  --lightViolet: #28223f;
+  --darkViolet: #231e39;
+  --deepDarkViolet: #1f1a36;
+  --lightBlue: #03bfcb;
+  --white:#fff;
+}
+
+body {
+  color: var(--white);
+  font-family: var(--robotoMono);
+  background: var(--lightViolet);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: var(--ubuntu);
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+p, li {
+  font-size: .8rem;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile__card {
+  width: 30vw;
+  min-width: 325px;
+  background: var(--darkViolet);
+  -webkit-box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile__header__top, .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile__picture {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--lightBlue);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: auto;
+}
+
+.profile__picture__holder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url(../image/me.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+.profile__header__bottom {
+  padding: 1rem 0;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.button {
+  width: 100px;
+  padding: .5rem 0;
+  border: 1px solid var(--lightBlue);
+  color: var(--darkBlue);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  -webkit-box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.message__button {
+  border: none;
+  background: var(--lightBlue);
+  color: var(--deepDarkViolet);
+}
+
+/*footer*/
+footer {
+  background: var(--deepDarkViolet);
+  padding: 1rem .75rem;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+
+footer li {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  padding: .1rem .25rem;
+}
+/*# sourceMappingURL=main.css.map */

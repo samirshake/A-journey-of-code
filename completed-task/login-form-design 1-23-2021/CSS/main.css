@@ -1,0 +1,129 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ubuntu: 'Ubuntu', sans-serif;
+  --robotoMono: 'Roboto Mono', monospace;
+  --darkBlack:  #1c2833;
+  --darkBlue:  #1f618d;
+  --yellow:  #f4d03f;
+  --grey:  #c2c2c2;
+  --green:  #27ae60;
+  --white: #fff;
+}
+
+body {
+  color: var(--darkBlack);
+  font-family: var(--robotoMono);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: var(--ubuntu);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top__design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color__span {
+  width: calc(100% / 5);
+  min-width: calc(275 / 5) px;
+  height: 5px;
+}
+
+.color__span:nth-child(1) {
+  background: var(--green);
+}
+
+.color__span:nth-child(2) {
+  background: var(--darkBlack);
+}
+
+.color__span:nth-child(3) {
+  background: var(--darkBlue);
+}
+
+.color__span:nth-child(4) {
+  background: var(--yellow);
+}
+
+.color__span:nth-child(5) {
+  background: orangered;
+}
+
+form {
+  background: var(--grey);
+  min-width: 325px;
+  width: 35vw;
+  height: 45vh;
+  position: relative;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.container div {
+  border-radius: 10px;
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 1px solid var(--darkBlack);
+  background-color: var(--white);
+}
+
+.container div + div {
+  margin: 1.75rem 0;
+}
+
+input {
+  background: transparent;
+  border: none;
+}
+
+.button__container {
+  background: var(--darkBlue) !important;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

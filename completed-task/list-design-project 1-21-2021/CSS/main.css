@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ubuntu: 'Ubuntu', sans-serif;
+  --robotoMono: 'Roboto Mono', monospace;
+  --darkBlack:  #1c2833;
+  --darkBlue:  #1f618d;
+  --yellow:  #f4d03f;
+  --grey:  #424949;
+  --darkGrey: #A0A0A0;
+  --green:  #27ae60;
+  --white: #fff;
+}
+
+body {
+  background: var(--darkBlack);
+  color: var(--darkBlack);
+  font-family: var(--robotoMono);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+i {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--darkBlac);
+  font-family: var(--ubuntu);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app__body {
+  background: var(--darkGrey);
+  width: 22vw;
+  min-width: 295px;
+  min-height: 50vh;
+  height: auto;
+}
+
+header, footer ul, .list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--darkBlack);
+  margin-right: 1rem;
+  background-image: url(../image/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.list__component {
+  margin: 1rem 0;
+}
+
+.list__container {
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+  border-radius: 35px;
+  padding: .25rem 1rem;
+}
+
+.list {
+  width: 100%;
+  margin: .5rem 0;
+}
+
+.name__title {
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--darkGrey);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sort__title {
+  padding: 0rem 1rem;
+}
+
+.myself .name__title {
+  border: 0;
+}
+
+.myself .profile__picture {
+  background-position: right;
+}
+
+header, footer {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

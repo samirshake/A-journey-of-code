@@ -1,0 +1,36 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.contact__container {
+  width: 50vw;
+  min-width: 400px;
+  border: 1px solid var(--darkBlack);
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: .5rem 0;
+}
+
+input + input {
+  margin: 2rem 0;
+}
+
+.button {
+  width: 100%;
+  background: var(--darkBlue);
+}
+
+textarea {
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

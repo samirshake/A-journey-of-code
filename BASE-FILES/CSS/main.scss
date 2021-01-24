@@ -1,0 +1,34 @@
+//Reset
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//Variables
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --robotoMono: 'Roboto Mono', monospace;
+    --darkBlack:  #1c2833;
+    --darkBlue:  #1f618d;
+    --yellow:  #f4d03f;
+    --grey:  #424949;
+    --green:  #27ae60;
+}
+
+body{
+    color: var(--darkBlack);
+    font-family: var(--robotoMono);
+}
+
+li{
+    list-style: none;
+}
+a{
+    font-family: var(--ubuntu);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}

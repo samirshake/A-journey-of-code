@@ -1,0 +1,109 @@
+//Reset
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//Variables
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --robotoMono: 'Roboto Mono', monospace;
+    --darkBlack:  #1c2833;
+    --darkBlue:  #1f618d;
+    --yellow:  #f4d03f;
+    --grey:  #424949;
+    --green:  #27ae60;
+    --lightViolet: #8484b3;
+    --white: #fff;
+}
+
+body{
+    color: var(--darkBlack);
+    font-family: var(--robotoMono);
+}
+
+li{
+    list-style: none;
+}
+a{
+    font-family: var(--ubuntu);
+    text-decoration: none;
+}
+
+.profile__picture{
+    width: 100%;
+    object-fit: cover;
+}
+.cards{
+    background: var(--lightViolet);
+    display:grid;
+    height: 100vh;
+    width:100vw;
+    place-content: center;
+}
+
+.cards__container{
+    min-height: 75vh;
+    width: 90%;
+}
+.card__component{
+    border-radius: 10px;
+    background: var(--white);
+    min-height: 45vh;
+    min-width: 275px;
+    width: 20vw;
+}
+.card__top{
+    border-radius: 10px 10px 0 0;
+    background: var(--darkBlue);
+    height: 15vh;
+    position: relative;
+}
+#cardExpans{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: var(--darkBlue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px;
+    cursor:pointer;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    opacity: .85;
+}
+
+.profile__picture__container{
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+.card__bottom{
+    padding: 4rem 3rem 2rem;
+}
+.card__details{
+    text-align: center;
+}
+
+.profile__name{
+    margin-bottom: 1rem;
+    font-family: var(--ubuntu);
+}
+.profile__about{
+    font-size: .75rem;
+}
+
+.social__links__container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
