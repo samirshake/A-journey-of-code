@@ -1,0 +1,129 @@
+.readpost {
+    overflow-x: hidden;
+    .readpost__center__container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 85%;
+        margin: auto;
+    }
+    .side__container{
+        width: 30%;
+    }
+    .main__container{
+        border: 1px solid rgba(0,0,0,.1);
+        width: 70%;
+    }
+    .background__image{
+        width: 100%;
+        height: 40vh;
+        border: 1px solid rgba(0, 0, 0,.1);
+
+    }
+    h1{
+      margin: 0;
+    }
+    h2{
+        margin: 0rem;
+        margin-top: .5rem;
+    }
+    p{
+        margin: 0;
+    }
+    .date-and-sort{
+        margin-bottom: 1rem;
+        font-size: .75rem;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        display: inline-block;
+        padding-bottom: .15rem;
+    }
+    .sort{
+        color: var(--darkBlue);
+    }
+    .content{
+        padding: 3rem 6rem;
+    }
+    .editor__container{
+        display: flex;
+        gap: 1rem;
+    }
+    .editor__image{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .editor__details h3,p{
+        margin: 0;
+    }
+    .editor{
+        width: 65px;
+        text-align: center;
+        border-radius: 30%;
+        border:2px solid var(--darkBlue);
+        color: var(--darkBlue);
+        font-weight: bold;
+    }
+
+    .latset__article{
+        padding-top: 5rem;
+    }
+    .latset__article__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button{
+            margin: 0;
+        }
+    }
+    .image-title{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        img{
+            width: 75px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        h1{
+            font-size: 1rem;
+        }
+    }
+}
+
+
+#comment{
+    padding: 5rem 0;
+    textarea{
+        width: 100%;
+        min-height: 100px;
+        height: 100px;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .readpost__center__container{
+        flex-direction: column;
+    }
+    .comment__button{
+        border: none;
+        background: var(--darkBlue);
+        color: var(--white);
+        padding: .5rem 2rem;
+        border-radius: 5px 15px;
+        cursor: pointer;
+        transition: padding .5s ease;
+        &:hover{
+            padding: .4rem 1.9rem;
+        }
+    }
+    .comment{
+        padding: 0 2rem;
+    }
+    .comment__text{
+        margin-top: 1rem;
+    }
+    #replyTextarea{
+        display: none;
+    }
+}

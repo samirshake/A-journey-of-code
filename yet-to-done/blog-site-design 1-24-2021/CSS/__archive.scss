@@ -1,0 +1,19 @@
+.sorting ul,.page__navigation,.page__navigation ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin: 2rem auto;
+    font-size: .7rem;
+}
+.page__navigation ul{
+    flex: 1;
+    margin: 0 2rem;
+}
+li,i{
+    cursor: pointer;
+    &:hover{
+        color: var(--darkBlue);
+    }
+    
+}
