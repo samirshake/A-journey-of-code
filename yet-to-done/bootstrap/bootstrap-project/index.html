@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Website Practice</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- Font Awesome Links -->
+    <script
+      src="https://kit.fontawesome.com/62fdb74148.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="container-fluid hero">
+      <div class="overlay"></div>
+      <div class="container">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Web Design</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Web Application</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="btn btn-outline-success" type="submit">
+                  <span><i class="fas fa-phone-square-alt"></i></span>
+                  070283718
+                </button>
+                <button class="btn btn-outline-success" type="submit">
+                  <span><i class="fas fa-envelope"></i></span>
+                  samirsayek321@gmail.com
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- navbar ends -->
+        <!-- hero content start -->
+        <div class="hero__content">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            reprehenderit voluptatum?
+          </h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+            dolorem laudantium ipsum. Aliquam doloribus sed pariatur accusamus
+            eum. Velit vel at cupiditate qui, reprehenderit corrupti possimus
+            consequuntur nisi deleniti nostrum?
+          </p>
+          <div class="d-flex button__container">
+            <button class="btn btn-outline-success" type="submit">
+              View More
+            </button>
+            <button class="btn btn-outline-success" type="submit">
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <!-- hero content end -->
+      </div>
+    </header>
+    <main>
+      <!-- about card start -->
+      <section class="card mt-5 mb-5">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-5 image__container d-flex">
+              <img
+                src="./image/about.jpg"
+                class="img-fluid"
+                alt="Business Person"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h6 class="">Knowledge of Market</h6>
+                <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Mollitia, laudantium!
+                </p>
+                <quote class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aliquid sed eaque, repellendus voluptates fugit hic! Dolorum
+                  numquam itaque deserunt aperiam, natus eius vel quam sequi?
+                </quote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about card end -->
+      <!-- speciality start -->
+      <section class="speciality">
+        <div class="speciality__header card__header">
+          <h2 class="card-title">Custom SEO Services - Our Speciality</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dicta
+            <br />
+            error repudiandae molestias dolorum facere similique nam ad nobis
+            non.
+          </p>
+        </div>
+        <div class="container d-flex">
+          <!-- single card start -->
+          <div class="card text-center">
+            <div class="card-header">
+              <img src="./image/girl1.jpg" class="" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">2 days ago</div>
+          </div>
+          <!-- single card end -->
+          <!-- single card start -->
+          <div class="card text-center">
+            <div class="card-header">
+              <img src="./image/girl1.jpg" class="" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">2 days ago</div>
+          </div>
+          <!-- single card end -->
+          <!-- single card start -->
+          <div class="card text-center">
+            <div class="card-header">
+              <img src="./image/girl1.jpg" class="" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">2 days ago</div>
+          </div>
+          <!-- single card end -->
+        </div>
+        <div class="d-flex button__container mt-5">
+          <button class="btn btn-outline-success" type="submit">
+            View More
+          </button>
+          <button class="btn btn-outline-success" type="submit">
+            Contact Us
+          </button>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <div class="client__header card__header">
+            <h1 class="card-title">Clients that love us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              repudiandae <br />
+              soluta, dolores ratione dicta placeat deserunt consectetur itaque
+              distinctio at?
+            </p>
+          </div>
+          <div class="client__body d-flex">
+            <span class="badge bg-secondary">
+              <span class="client__logo">
+                <i class="fas fa-running"></i>
+              </span>
+              aven
+            </span>
+            <span class="badge bg-secondary">
+              <span class="client__logo">
+                <i class="fas fa-running"></i>
+              </span>
+              aven
+            </span>
+            <span class="badge bg-secondary">
+              <span class="client__logo">
+                <i class="fas fa-running"></i>
+              </span>
+              aven
+            </span>
+            <span class="badge bg-secondary">
+              <span class="client__logo">
+                <i class="fas fa-running"></i>
+              </span>
+              aven
+            </span>
+            <span class="badge bg-secondary">
+              <span class="client__logo">
+                <i class="fas fa-running"></i>
+              </span>
+              aven
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <div class="client__header card__header">
+            <h1 class="card-title">Our Team Experts</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              repudiandae <br />
+              soluta, dolores ratione dicta placeat deserunt consectetur itaque
+              distinctio at?
+            </p>
+          </div>
+          <div class="team__body d-flex">
+            <!--single  team member card start -->
+            <div class="card" style="width: 18rem">
+              <img src="./image/profile-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h3 class="card-title">Junaid Hasan</h3>
+                <h6 class="job__position">CEO & FOUNDER</h6>
+                <div class="social__links d-flex">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--single  team member card end -->
+            <!--single  team member card start -->
+            <div class="card" style="width: 18rem">
+              <img src="./image/profile-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h3 class="card-title">Junaid Hasan</h3>
+                <h6 class="job__position">CEO & FOUNDER</h6>
+                <div class="social__links d-flex">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--single  team member card end -->
+            <!--single  team member card start -->
+            <div class="card" style="width: 18rem">
+              <img src="./image/profile-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h3 class="card-title">Junaid Hasan</h3>
+                <h6 class="job__position">CEO & FOUNDER</h6>
+                <div class="social__links d-flex">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--single  team member card end -->
+            <!--single  team member card start -->
+            <div class="card" style="width: 18rem">
+              <img src="./image/profile-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h3 class="card-title">Junaid Hasan</h3>
+                <h6 class="job__position">CEO & FOUNDER</h6>
+                <div class="social__links d-flex">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--single  team member card end -->
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="container d-flex">
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+
+          <div class="toasted__container">
+            <div class="toasted d-flex">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <div class="toasted__body">
+                Hello, world! This is a toast message.
+
+                <br />
+                11 mins ago
+              </div>
+            </div>
+            <div class="toasted d-flex">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <div class="toasted__body">
+                Hello, world! This is a toast message.
+
+                <br />
+                11 mins ago
+              </div>
+            </div>
+            <div class="toasted d-flex">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <div class="toasted__body">
+                Hello, world! This is a toast message.
+
+                <br />
+                11 mins ago
+              </div>
+            </div>
+            <div class="toasted d-flex">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <div class="toasted__body">
+                Hello, world! This is a toast message.
+
+                <br />
+                11 mins ago
+              </div>
+            </div>
+            <div class="toasted d-flex">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <div class="toasted__body">
+                Hello, world! This is a toast message.
+
+                <br />
+                11 mins ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex button__container">
+            <button class="btn btn-outline-success" type="submit">
+              View More
+            </button>
+            <button class="btn btn-outline-success" type="submit">
+              Contact Us
+            </button>
+          </div>
+      </section>
+    </main>
+    <!-- foooter start -->
+    <footer>
+        <div class="container d-flex">
+            <div>
+                <div class="toasted d-flex">
+                    <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                    <div class="toasted__body">
+                      <strong>
+                        Bootstrap
+                      </strong>
+                      <br>
+                      <small>
+                        SEO & Marketing
+                      </small>
+                    </div>
+                  </div>
+                  <p class="mt-2">Lorem ipsum dolor sit <br> amet consectetur adipisicing  <br>
+                elit. Qui, numquam.</p>
+                <div class="">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+              <div>
+                  <h6>Useful Links</h6>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contatc</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+              </div>
+              <div>
+                  <p>
+                      Product Help
+                  </p>
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Terms and condition</a></li>
+                </ul>
+              </div>
+              <div>
+                  <p>Download</p>
+                  <a href="#">
+                      <img src="./image/app-store.png" alt="">
+                  </a>
+                  <a href="#">
+                      <img src="./image/play-store.png" alt="">
+                  </a>
+              </div>
+        </div>
+        <div class="container d-flex">
+            <p>
+                &copy; Copyright 2021 ryuzaki
+            </p>
+            <p>Made with Bootstrap and Some extra Custom CSS</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

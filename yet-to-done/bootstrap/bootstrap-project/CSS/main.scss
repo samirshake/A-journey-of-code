@@ -1,0 +1,269 @@
+//Reset
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//Variables
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --robotoMono: 'Roboto Mono', monospace;
+    --darkBlack:  #1c2833;
+    --darkBlue:  #1f618d;
+    --yellow:  #f4d03f;
+    --grey:  #424949;
+    --green:  #27ae60;
+    --white: #fff;
+}
+
+body{
+    color: var(--darkBlack);
+    font-family: var(--robotoMono);
+}
+
+li{
+    list-style: none;
+}
+a{
+    font-family: var(--ubuntu);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+//project starts
+.hero{
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+    .overlay{
+        background:var(--white);
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        opacity: .75;
+    }
+}
+.navbar{
+    a{
+    color: var(--grey);
+    font-weight: bold;
+    }
+   button + button {
+       margin: 0 1rem;
+   }
+    
+}
+.hero__content{
+    height: 90vh;
+    position: relative;
+    color: var(--darkBlack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    h1{
+        font-weight: bold;
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+    }
+    p{
+        margin: 2.5rem 0;
+        color: var(--grey);
+    }
+    button + button {
+        margin: 0 1rem;
+    }
+    
+}
+
+.card {
+    border: unset;
+    .row{
+        background: var(--grey);
+        color: var(--white);
+    }
+    .card-body{
+        padding: 2rem;
+        height: 100%;
+    }
+}
+
+
+    .image__container{
+        
+        img{
+            border: none;
+        border-right: 3px solid;
+        padding: 0;
+        border-radius: 0;
+        // object-fit: contain;
+        }
+        // justify-content: center;
+        // align-items: center;
+    }
+//speciality
+.speciality{
+    padding: 5rem 0;
+    background: rgba(0,0,0,0.05);
+    .d-flex{
+        gap: 1rem;
+    }
+    .button__container{
+        display:  grid;
+        place-content: center;
+    }
+   
+}
+.card__header{
+    text-align: center;
+    
+}
+.card-header{
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+//clients
+.clients{
+    .d-flex{
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+.badge{
+    padding:1rem 5rem;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.team{
+    h3{
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: .75rem;
+    }
+    i{
+        color: var(--darkBlack);
+    }
+    .d-flex{
+        gap: 2rem;
+    }
+    .team__body{
+        margin-top: 5rem;
+    }
+}
+
+.toasted__container{
+    i {
+        line-height: 1.5 !important;
+        font-size: 1.25rem;
+    }
+}
+
+.service{
+    background: rgba(0,0,0,0.05);
+    .container{
+        justify-content: center;
+        gap: 5rem;
+    }
+    .toasted{
+        gap: 1rem
+    }
+    .toasted + .toasted{
+        margin: 2rem 0;
+    }
+    i{
+        color: var(--darkBlue);
+    }
+    form{
+        width: 400px;
+    }
+    textarea{
+        width: 100%;
+        padding:.25rem 1rem;
+    }
+    .btn-primary {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+        background: var(--darkBlue);
+    }
+    .button__container{
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+
+footer{
+    padding: 2rem 0;
+    img{
+        width: 150px;
+        display: block;
+        margin: 1rem 0;
+    }
+    .container{
+        justify-content: space-between;
+        div{
+            margin-bottom: .5rem;
+        }
+    }
+    ul{
+        padding: 0;
+        a{
+            color: var(--darkBlue);
+        }
+    }
+    .toasted{
+        i {
+            line-height: 1.2 !important;
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+    }
+    
+    i{
+        color: var(--darkBlue);
+    }
+}
+
+//media queries
+@media screen and (max-width: 600px) {
+    .container,.team__body,.client__body{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .team__body{
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        padding: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .container,.team__body,.client__body{
+        flex-wrap: wrap;
+    }
+}
